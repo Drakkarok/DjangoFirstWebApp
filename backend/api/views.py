@@ -30,7 +30,6 @@ class NoteDelete(generics.DestroyAPIView):
         return Note.objects.filter(author=user)
 
 
-# Create your views here.
 class CreateUserView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
